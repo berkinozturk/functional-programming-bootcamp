@@ -8,7 +8,7 @@ import java.util.List;
 public class Practise5 {
 
     public List<RefundDto> assembleSuccessfulRefunds(List<Refund> refunds) {
-        // TODO: implement method that accepts list of Refunds and assembles the successful refunds into RefundDto
+        // TODO: implement method that accepts list of Refunds and assembles the successful refunds into R  efundDto
         return refunds.stream()
                 .filter(refund -> refund.isSuccess())
                 .map(refund -> RefundDto.builder().id(refund.getId()).build())

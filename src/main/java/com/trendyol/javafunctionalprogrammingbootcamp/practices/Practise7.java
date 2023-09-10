@@ -21,5 +21,16 @@ public class Practise7 {
                 .filter(payment -> payment.getCreatedDate() >= startDate)
                 .filter(payment -> payment.getCreatedDate() <= endDate)
                 .allMatch(payment -> payment.isReconciliationCompleted());
+
+        /*return payments.stream()
+                .filter(payment -> payment.getCreatedDate() >= startDate)
+                .filter(payment -> payment.getCreatedDate() <= endDate)
+                .allMatch(Payment::isReconciliationCompleted);*/
+
+        /*List<Payment> list =  payments.stream()
+        .filter(payment -> startDate <= payment.getCreatedDate() && payment.getCreatedDate() <= endDate)
+        .toList();
+
+        return list.isEmpty() ? true : list.stream().allMatch(payment -> payment.isReconciliationComplet*/
     }
 }
